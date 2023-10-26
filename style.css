@@ -9,10 +9,16 @@ body {
   border-top: 10px solid #1098ad;
 }
 
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
 nav {
@@ -32,6 +38,8 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
+  width: 500px;
+  margin-bottom: 20px;
 }
 
 h1,
@@ -122,4 +130,38 @@ a:hover {
 
 a:active {
   background-color: black;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+/* pseudo elements */
+/* h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+  color: red;
+} */
+
+/* adjacent sybling selector */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* before/after pseudo elements */
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
