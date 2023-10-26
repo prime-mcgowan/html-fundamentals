@@ -44,7 +44,23 @@
         align-items: center;
         justify-content: flex-start;
         /* use gap rather than margin on all the elements */
-        gap: 30px;
+        /* gap: 30px; */
+      }
+
+      /* 
+      DEFAULTS:
+      flex-grow: 0;
+      flex-shrink: 1;
+      flex-basis: auto;
+      
+      CODE IT LIKE THIS:
+      flex: 0 0 200px;
+      */
+
+      .el {
+        /* flex-basis: 100px; */
+        /* elements fill the container equally */
+        flex-grow: 1;
       }
 
       .el--1 {
