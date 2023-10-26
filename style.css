@@ -217,3 +217,21 @@ h4 {
   font-weight: normal;
   font-style: italic;
 }
+
+.row {
+  display: flex;
+  /* flex-start will have that element take up ONLY the space necessary instead of vertically covering the whole page */
+  align-items: flex-start;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+
+article {
+  flex: 0 0 825px;
+  /* OR flex: 1; */
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+}
